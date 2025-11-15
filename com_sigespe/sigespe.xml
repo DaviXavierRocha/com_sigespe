@@ -25,4 +25,23 @@
     <files folder="site">
         <folder>views</folder>
         </files>
+
+        <menuitems>
+    <menuitem 
+        title="COM_SIGESPE_VISÃO_CORPORATIVA"
+        type="component"
+        link="index.php?option=com_sigespe&amp;view=visao_corporativa">
+        <title>COM_SIGESPE_VISÃO_CORPORATIVA</title>
+        <description>Exibe a página principal do Sigespe.</description>
+    </menuitem>
+
+    <menuitem
+        title="COM_SIGESPE_GESTÃO_PESSOAL"
+        type="component"
+        link="index.php?option=com_sigespe&amp;view=gestao_pessoal">
+        <title>COM_SIGESPE_GESTÃO_PESSOAL</title>
+        <description>Exibe a página de gestão do Sigespe.</description>
+    </menuitem>
+</menuitems>
+
 </extension>
