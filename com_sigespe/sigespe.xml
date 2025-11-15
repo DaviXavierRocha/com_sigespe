@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="6.0" method="upgrade">
+    <name>com_sigespe</name>
+    <author>3º Sgt Davi Rocha</author>
+    <creationDate>2025-11-13</creationDate>
+    <copyright>3º BEC - Exército Brasileiro</copyright>
+    <license>GPL v3</license>
+    <version>1.0.0</version>
+    <description>Sistema de Gestão de Pessoal - SIGESPE</description>
+
+    <!-- ADMINISTRAÇÃO (COPIA PASTA ADMIN PRIMEIRO) -->
+    <administration>
+        <menu>Visão Corporativa</menu>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>sql</folder>
+        </files>
+    </administration>
+
+    <!-- LINGUAGEM -->
+    <languages folder="language">
+        <language tag="pt-BR">pt-BR/com_sigespe.ini</language>
+        <language tag="pt-BR">pt-BR/com_sigespe.sys.ini</language>
+    </languages>
+
+    <!-- ARQUIVOS DO SITE (COPIA DEPOIS) -->
+    <files folder="site">
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <!-- INSTALAÇÃO SQL (AGORA EXECUTA DEPOIS DA CÓPIA DA PASTA ADMIN) -->
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">admin/sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+</extension>
