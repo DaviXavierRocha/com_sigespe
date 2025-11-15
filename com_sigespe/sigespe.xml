@@ -16,6 +16,8 @@
         <files folder="admin">
             <filename>sigespe.php</filename>
             <folder>sql</folder>
+            <folder>controllers</folder>
+            <folder>models</folder>
         </files>
 
         <menuitems>
