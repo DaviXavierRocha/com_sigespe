@@ -10,28 +10,19 @@
 
     <scriptfile>script.php</scriptfile>
 
-    <!-- ADMINISTRAÇÃO (COPIA PASTA ADMIN PRIMEIRO) -->
     <administration>
         <menu>Visão Corporativa</menu>
         <files folder="admin">
-            <folder>controllers</folder>
-            <folder>models</folder>
-            <folder>tables</folder>
-            <folder>views</folder>
             <folder>sql</folder>
-        </files>
+            </files>
     </administration>
 
-    <!-- LINGUAGEM -->
     <languages folder="language">
         <language tag="pt-BR">pt-BR/com_sigespe.ini</language>
         <language tag="pt-BR">pt-BR/com_sigespe.sys.ini</language>
     </languages>
 
-    <!-- ARQUIVOS DO SITE (COPIA DEPOIS) -->
     <files folder="site">
-        <folder>controllers</folder>
-        <folder>models</folder>
         <folder>views</folder>
-    </files>
+        </files>
 </extension>
